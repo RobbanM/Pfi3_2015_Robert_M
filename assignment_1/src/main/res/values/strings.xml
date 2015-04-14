@@ -1,6 +1,20 @@
 <resources>
-    <string name="app_name">Assignment_1</string>
-
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">Assignment 1</string>
+    <string name="quote_field">Click New Quote</string>
+    <string name="quote_btn">New Quote</string>
+    <string name="quotes">"Quotes"</string>
     <string name="action_settings">Settings</string>
+
+    <string-array name ="quote">
+
+    <item> "\"Don't cry because it's over, smile because it happened.\"
+― Dr. Seuss "</item>
+    <item> "\"Be yourself; everyone else is already taken.\"
+― Oscar Wilde"</item>
+    <item> "\"Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.\"
+― Bernard M. Baruch"</item>
+
+    </string-array>
+
+
 </resources>

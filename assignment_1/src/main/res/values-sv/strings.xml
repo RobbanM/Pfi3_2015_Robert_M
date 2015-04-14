@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Assignment 1</string>
+    <string name="quote_field">Tryck Nytt Citat</string>
+    <string name="quote_btn">Nytt Citat</string>
+    <string name="quotes">"Citat"</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name ="quote">
+
+    <item> "\"Gråt inte för att det är över, le för att det hände.\"
+― Dr. Seuss "</item>
+    <item> "\"Var dig själv; alla andra redan tagit.\"
+― Oscar Wilde"</item>
+    <item> "\"Var vem du är och säga vad du känner, eftersom de som har något emot inte någon roll, och dem som betyder inte har något emot.\"
+― Bernard M. Baruch"</item>
+
+    </string-array>
+
+
+</resources>
