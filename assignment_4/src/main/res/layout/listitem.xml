@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.robert.assignment4.GridFragment"
+    android:id="@+id/GridFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:id="@+id/listName"
+        android:layout_below="@id/imageViewPlanet"
+        android:layout_alignStart="@id/textViewPlanetName"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_marginTop="4dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:src="@drawable/earth"
+        android:id="@+id/listImage"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_below="@+id/listName"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

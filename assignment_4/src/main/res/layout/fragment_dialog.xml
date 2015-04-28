@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.robert.assignment_4.InfoFragment"
+    android:id="@+id/DialogFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Made by Robert"
+        android:id="@+id/tv_dialog_title"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_dialog"
+        android:paddingTop="52dp"
+        android:src="@drawable/earth"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/tv_dialog_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/iv_dialog"
+        android:paddingTop="32dp"
+        android:paddingBottom="16dp">
+
+    </ScrollView>
+
+    <TextView
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Example text hello hello"
+        android:id="@+id/tv_dialog_description"
+        android:layout_above="@+id/scrollView"
+        android:layout_toEndOf="@+id/iv_dialog"
+        android:layout_marginBottom="44dp" />
+
+</RelativeLayout>
