@@ -47,6 +47,7 @@ public class Adapter extends BaseExpandableListAdapter {
 
         } else {
             anyDeviation = "Deviation: " + j.get(groupPosition).getDepTimeDeviation()+ " min \n\n";
+            arrTime.setImageResource(R.drawable.ic_action_warning);
         }
 
 

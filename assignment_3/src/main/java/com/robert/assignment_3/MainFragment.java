@@ -3,6 +3,7 @@ package com.robert.assignment_3;
 import android.app.Fragment;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -35,23 +36,26 @@ private String searchURL;
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.refresh:
-                // String searchURL = Constants.getURL("80000", "93070", 14); //Malmö C = 80000,  Malmö Gatorg 80100, Hässleholm C 93070
+        int id = item.getItemId();
 
 
-                spinnerFrom.setOnItemSelectedListener(this);
-                spinnerTo.setOnItemSelectedListener(this);
+        if (id == R.id.refresh){
+            Log.i("knapp", "started");
 
-                int fromStation = spinnerFrom.getSelectedItemPosition();
-                int toSTation = spinnerTo.getSelectedItemPosition();
-                //String searchURL = Constants.getURL("80000", "93070", 10); //Malmö C = 80000,  Malmö GAtorg 80100, Hässleholm C 93070
-                String[] stationNo = getResources().getStringArray(R.array.stationNumbers);
-                searchURL = Constants.getURL( stationNo[fromStation], stationNo[toSTation], 14);
-                new MyAsyncTask().execute(searchURL);
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+            int fromStation = spinnerFrom.getSelectedItemPosition();
+            int toStation = spinnerTo.getSelectedItemPosition();
+
+            String[] stationNo = getResources().getStringArray(R.array.stationNumbers);
+            String searchURL = Constants.getURL(stationNo[fromStation], stationNo[toStation], 5);
+            myItems.clear();
+            new MyAsyncTask().execute(searchURL);
+
+
+            return true;
+        }
+        else {
+
+            return super.onOptionsItemSelected(item);
         }
     }
 
